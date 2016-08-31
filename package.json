@@ -1,0 +1,22 @@
+{
+  "name": "js-detect-browser-os",
+  "version": "1.0.0",
+  "description": "检测浏览器、浏览器版本、操作系统、操作系统版本",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natee/js-detect-browser-os.git"
+  },
+  "author": "natee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natee/js-detect-browser-os/issues"
+  },
+  "homepage": "https://github.com/natee/js-detect-browser-os#readme",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
