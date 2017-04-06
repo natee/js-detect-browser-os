@@ -8,20 +8,20 @@
 你可以获取如下信息：
 ```json
 {
-	browser: 'Chrome',
-	browserVersion: 52,
-	os: 'Mac',
-	osVersion: 'OS X'
+	"browser": "Chrome",
+	"browserVersion": 52,
+	"os": "Mac",
+	"osVersion": "OS X"
 }
 ```
 
 某些情况，如APP中内置浏览器，可能得到不符合预期的结果：
 ```json
 {
-	browser: 'Chrome',
-	browserVersion: 'iPhone 5 IOS 9....',
-	os: 'Mac OS X',
-	osVersion: '10_11_6'
+	"browser": "Chrome",
+	"browserVersion: "iPhone 5 IOS 9....",
+	"os": "Mac OS X",
+	"osVersion": "10_11_6"
 }
 ```
 
@@ -39,3 +39,16 @@ console.log(boInfo);
 // {browser: "chrome", browserVersion: "57", os: "Mac OS X", osVersion: "10_12_3"}
 </script>
 ```
+
+**Note**
+In some special case, the result was not as expected. 
+For example, you develop a custom browser in you app, the result maybe below:
+```json
+{
+	"browser": "Chrome",
+	"browserVersion: "iPhone 5 IOS 9....",
+	"os": "Mac OS X",
+	"osVersion": "10_11_6"
+}
+```
+`browserVersion` was not the real version.
