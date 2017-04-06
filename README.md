@@ -3,7 +3,7 @@
 
 
 ## 使用方法
-页面引入browser.js后，即可通过全局变量osInfo获取信息。
+页面引入browser.js后，即可通过全局变量boInfo获取信息。
 
 你可以获取如下信息：
 ```json
@@ -23,4 +23,19 @@
 	os: 'Mac OS X',
 	osVersion: '10_11_6'
 }
+```
+
+## Usage Example
+
+1. Include the js file in your html.
+```
+<script src="browser.js" type="text/javascript"></script>
+```
+
+2. Get the browser and system info from global variable `window.boInfo`
+```
+<script type="text/javascript">
+console.log(boInfo);
+// {browser: "chrome", browserVersion: "57", os: "Mac OS X", osVersion: "10_12_3"}
+</script>
 ```
